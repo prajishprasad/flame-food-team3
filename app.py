@@ -6,9 +6,9 @@ app.secret_key = "supersecretkey"  # Needed for sessions (to store cart data)
 
 # Dummy data: cafes and menus
 cafes = {
-    "Cafe One": ["Coffee", "Sandwich", "Muffin"],
-    "Cafe Two": ["Tea", "Burger", "Fries"],
-    "Cafe Three": ["Pizza", "Pasta", "Salad"]
+    "Cafe One": {"Coffee": 20, "Sandwich": 50, "Muffin": 30},
+    "Cafe Two": {"Tea": 15, "Burger": 70, "Fries": 40},
+    "Cafe Three": {"Pizza": 100, "Pasta": 80, "Salad": 50}
 }
 
 @app.route("/")
